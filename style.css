@@ -1,0 +1,106 @@
+
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container to center gallery on larger screens */
+.gallery-container {
+  width: 100%;
+  max-width: 800px; /* Optional: limits width on large screens */
+  margin: 0 auto;
+}
+
+/* Image box styling */
+.image-box {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width */
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.image-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.image-box img {
+  width: 100px; /* Fixed width for images */
+  height: auto;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+/* Title styling */
+.image-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  word-break: break-word; /* Prevents long filenames from overflowing */
+}
+
+/* Fullscreen overlay styling */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Fullscreen image styling */
+.fullscreen-overlay img {
+  max-width: 100%; /* Full width with some padding */
+  max-height: 100%; /* Keeps image within view */
+  border-radius: 0px;
+  /*box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);*/
+  object-fit: contain;
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4d4d; /* Red close button */
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #ff3333; /* Darker red on hover */
+}
