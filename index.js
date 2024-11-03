@@ -51,4 +51,4 @@ closeButton.addEventListener("click", closeFullscreen);
 
 // Initial load
 loadImages();
-
+closeFullscreen();
