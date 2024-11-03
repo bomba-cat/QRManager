@@ -1,6 +1,6 @@
 {
   "name": "FCSG Tickets",
-  "short_name": "FCSG",
+  "short_name": "FCSG Tickets",
   "description": "Ticket system",
   "start_url": "QRManager/index.html",
   "display": "standalone",
