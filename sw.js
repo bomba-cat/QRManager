@@ -3,11 +3,11 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("static-v1").then(cache => {
       return cache.addAll([
-        "/index.html",
-        "/style.css",
-        "/index.js",
-        "/icons/icon-192x192.png",
-        "/icons/icon-512x512.png"
+        "QRManager/index.html",
+        "QRManager/style.css",
+        "QRManager/index.js",
+        "QRManager/icons/icon-192x192.png",
+        "QRManager/icons/icon-512x512.png"
       ]);
     })
   );

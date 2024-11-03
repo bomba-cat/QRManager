@@ -2,7 +2,7 @@
   "name": "FCSG Tickets",
   "short_name": "FCSG",
   "description": "Ticket system",
-  "start_url": "/index.html",
+  "start_url": "QRManager/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#333333",
